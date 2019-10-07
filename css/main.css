@@ -1,0 +1,24 @@
+html {
+  font-family: courier new, courier, serif;
+  text-align: center;
+  background-color: rgb(213, 213, 213);
+}
+
+.container{
+  border: 5px solid black;
+  height: 600px;
+  width: 600px;
+  margin: 0 auto;
+  padding: 0px; 
+  background-color: black;
+  font-size: 0;
+}
+
+.grid{
+  display: inline-block;
+  border: none;
+  margin: 0px;
+  padding: 0px; 
+  background-color: white;
+  box-sizing: content-box; 
+}
