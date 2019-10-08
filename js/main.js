@@ -1,4 +1,5 @@
 const boxContainer = document.querySelector('.container');
+const changeSize = document.querySelector('.change-size');
 
 function makeArea(num) {
 	let gridDimensions = ((600 / num) -2).toFixed(2);
@@ -19,20 +20,24 @@ function makeArea(num) {
 
 function changeColor() {
 	this.style.backgroundColor = '#696969'
+
 }
 
-makeArea(16);
-
-/* function makeRows(rows, cols) {
-	boxContainer.style.setProperty('--grid-rows', rows);
-	boxContainer.style.setProperty('--grid-cols', cols);
-	for (let i = 0; i < (rows * cols); i++) {
-		let sketchBox = document.createElement('div');
-		sketchBox.innerText = (i + 1);
-		boxContainer.appendChild(sketchBox);
-		sketchBox.setAttribute('class', 'cell');
+function reSize() {
+	let newGridSize = prompt('Choose a number of squares between 1-100', '');
+	if (newGridSize >= 1 && newGridSize <= 100){
+		while(boxContainer.hasChildNodes()) {
+			boxContainer.removeChild(boxContainer.lastChild);
+		}
+		makeArea(newGridSize)
+	} else {
+		alert ('Choose a number between 1-100!');
+		reSize()
 	}
 }
 
-makeRows(16, 16);
-*/
+changeSize.addEventListener('click', reSize)
+onload = makeArea(16);
+
+
+

@@ -1,7 +1,20 @@
 html {
-  font-family: courier new, courier, serif;
+  font-family: "Courier New", Courier, serif;
   text-align: center;
   background-color: rgb(213, 213, 213);
+}
+
+button {
+  padding: 5px 10px;
+  margin: 0px 0px 40px 0px;
+  border: 5px solid black;
+  font-family: "Courier New", Courier, serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.change-size {
+  margin-right: 20px;
 }
 
 .container{
