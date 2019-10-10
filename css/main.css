@@ -13,8 +13,16 @@ button {
   font-weight: bold;
 }
 
-.change-size {
+footer {
+  margin-top: 50px;
+}
+
+.new-board, .rainbow, .grey {
   margin-right: 20px;
+}
+
+.new-board, .clear {
+  margin-top: 40px;
 }
 
 .container{
