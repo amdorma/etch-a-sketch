@@ -11,6 +11,7 @@ button {
   font-family: "Courier New", Courier, serif;
   font-size: 16px;
   font-weight: bold;
+  cursor:pointer;
 }
 
 footer {
